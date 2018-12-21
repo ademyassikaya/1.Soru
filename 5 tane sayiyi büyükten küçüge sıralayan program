@@ -1,0 +1,10 @@
+ders = []
+for x in range (5):
+    gelen = input("Bir sayı girin")
+    ders.append(gelen)
+ders.sort(reverse=True)
+print(ders)
+
+dosya = open(r"C:\ders\221120171003_sonuc.txt","w")
+for j in range(5):
+    dosya.write(ders[j] +" ")
